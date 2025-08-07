@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .list {
+    background-image: url(https://images.pexels.com/photos/6985003/pexels-photo-6985003.jpeg?cs=srgb&dl=pexels-codioful-6985003.jpg&fm=jpg);
+    height: 100px;
+    width: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+        /* } */
+        .list {
+            /* max-width: 500px; */
+            margin: auto;
+            border-radius: 134px;
+            position: relative;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            position: absolute;
+            top: 16%;
+            left: 40%;
+            background: #1919b7;
+            height: 300px;
+            border-radius: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 29px;
+            box-shadow: 5px 8px midnightblue;
+        }
+
+        input#input {
+            width: 200px;
+            height: 35px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            padding: 7px 16px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+        }
+
+
+        .output {
+            display: flex;
+            gap: 20px;
+            /* justify-content: right; */
+            /* align-items: center; */
+            flex-direction: column;
+            max-width: 200px;
+            background: white;
+            position: absolute;
+            top: 142px;
+            height: 192px;
+            border-radius: 10px;
+            overflow: overlay;
+            width: 188px;
+            padding: 7px 10px;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button.jsButton {
+            background: darkred;
+            color: white;
+            padding: 4px 14px;
+        }
+
+        input::placeholder {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/11615.png" alt="" width="100%" height="100%">
+        <div class="main">
+            <input type="text" id="input" placeholder="Enter text">
+            <button onclick="add()"> click here</button>
+            <div class="output"></div>
+        </div>
+
+    </div>
+
+    <script>
+        function add() {
+            let creat = document.createElement("li");
+            let inputElement = document.getElementById("input");
+            let val = inputElement.value;
+            creat.innerHTML = ` ${val} <button onclick="del(this)" class="jsButton"> DELET </button>`
+
+            let divbox = document.getElementsByClassName("value")[0];
+            let output = document.querySelector(".output");
+
+            output.appendChild(creat)
+            inputElement.value = "";
+        }
+        function del(creat) {
+            creat.parentElement.remove();
+        }
+    </script>
+</body>
+
+</html>
