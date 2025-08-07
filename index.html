@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Playwrite+HU:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="home" id="homePage">
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-inner wrapper">
+                <div class="logo ">
+                    <p>ITGEEKS</p>
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li>home</li>
+                            <li>pages</li>
+                            <li>about</li>
+                            <li>contect us</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="modebutton">
+                    <button onclick="darkMode()" class="uppercases">MODE</button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="user-input" id="upt">
+                <div class="heading">
+                    <h1>web tool</h1>
+                </div>
+                <input type="text" id="user-content" placeholder="ENTER THE TEXT">
+                <div class="buttons">
+                    <button onclick="darkMode()" class="uppercases" id="bts">MODE</button>
+                    <button onclick="uppercase()" class="uppercases">UPPER CASE</button>
+                    <button onclick="itlics()" class="uppercases">ITLAIC</button>
+                    <button onclick="lowercase()" class="uppercases">LOWERCASE</button>
+                    <button onclick="bold()" class="uppercases">BOLD</button>
+                    <button onclick="colour()" class="uppercases">COLOUR</button>
+                    <button onclick="capital()" class="uppercases">CAPITAL</button>
+                    <a href="http://127.0.0.1:5502/index.html" class="ennchor">RESET</a>
+                </div>
+
+
+
+            </div>
+            <div class="output" id="outputdiv">
+                <p class="paragraph"></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
