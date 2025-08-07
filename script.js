@@ -55,26 +55,20 @@ function lowercase() {
 }
 let pge = document.getElementById("homePage");
 function darkMode() {
-  // let buttons = document.getElementById("modes").textContent = "topgam"
+  
 
   let bns = document.getElementsByTagName("button");
   let UPPER = document.getElementById("user-content");
   let outputdiv = document.getElementById("outputdiv");
-  // let p = document.getElementById("upt");
-  // if (p.style.background = "#135f83") {
-  //   p.style.background = "#0a1e28";
-  // } else {
-  //   p.style.background = "#135f83";
-  // }
   outputdiv.classList.toggle("dark");
   UPPER.classList.toggle("dark");
   pge.classList.toggle("dark");
-  for (let index = 1; index < bns.length; index++) {
+  for (let index = 0; index < bns.length; index++) {
     bns[index].classList.toggle("dark");
-    if (bns[1].textContent != "LIGHT") {
-      bns[1].textContent = "LIGHT";
+    if (bns[0].textContent != "LIGHT") {
+      bns[0].textContent = "LIGHT";
     } else {
-      bns[1].textContent = "DARK";
+      bns[0].textContent = "DARK";
     }
   }
 }
@@ -87,4 +81,3 @@ function capital() {
   para.textContent = capitalizedWords.join(" ");
 }
 
-// for(let value=0; value<value.length)
