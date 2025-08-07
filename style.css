@@ -1,0 +1,118 @@
+.uppercases {
+    width: 150px;
+    height: 48px;
+    border-radius: 11px;
+    font-size: 16px;
+    border: none;
+    /* background: #f5fdf7; */
+}
+
+/* button.uppercases:hover {
+    background: white;
+} */
+
+.dark {
+    background: #333C4D;
+    color: white;
+}
+
+.user-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-inner {
+    width: 1355px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* color: white; */
+}
+
+.user-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #135f83;
+    width: 468px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 10px #d1c4c4;
+    color: white;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.ennchor {
+    padding: 8px 0px;
+    background: grey;
+    border-radius: 11px;
+    text-align: center;
+    font-size: 27px;
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.wrapper {
+    max-width: 1340px;
+    margin: auto;
+    /* display: flex; */
+    justify-content: center;
+    /* font-family: "Playwrite HU", 'cursive'; */
+    align-items: center;
+}
+
+.navigation nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+input#user-content {
+    width: 300px;
+    height: 50px;
+    border-radius: 11px;
+    border: none;
+    font-size: 18px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    color: gray;
+    font-size: 15px;
+}
+
+.output {
+    /* background: white; */
+    width: 440px;
+    height: 445px;
+    padding: 10px;
+    margin: 10px;
+    border: 20px solid #8d0707;
+    border-radius: 10px;
+    box-shadow: 5px 10px #d1c4c4;
+}
+
+.paragraph {
+    font-size: 20px;
+    color: red;
+}
